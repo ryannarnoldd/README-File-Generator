@@ -36,7 +36,7 @@ The license used is MIT. Here is the link to get detailed information for this l
 
 ## Tests
 
-There is an example README file in the 'output' folder that was generated using this project. This is the same README that was placed inside of the Walkthrough project and is based on Project 1: TrackerCoaster. Screenshots are placed to example the output of the README.md too!
+There is an example README file in the 'output' folder that was generated using this project. This is the same README that was placed inside of the Walkthrough project and is based on Project 1: TrackerCoaster. Screenshots are placed to example the output of the README.md too! https://files.fm/u/aqmb474vp9
 
 <img width="1405" alt="Screenshot 2024-09-30 at 6 46 57 PM" src="https://github.com/user-attachments/assets/8f5b6bc7-54dc-4ab7-b741-83ed8015d389">
 
