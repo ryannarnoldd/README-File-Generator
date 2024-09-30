@@ -1,0 +1,24 @@
+{
+  "name": "readme-file-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryannarnoldd/README-File-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryannarnoldd/README-File-Generator/issues"
+  },
+  "homepage": "https://github.com/ryannarnoldd/README-File-Generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^11.1.0"
+  }
+}
