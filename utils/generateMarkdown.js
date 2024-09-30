@@ -8,36 +8,37 @@ function renderLicenseBadge(license) {
 // Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+    if (license === "N/A") return "";
     let licenseLink;
 
-    // select correct license link for the selected license
+    // Selects the correct license link for the selected license
     switch(license) {
-      case "MIT":
-        licenseLink = "https://mit-license.org/";
-        break;
-      case "BSD":
-        licenseLink = "https://opensource.org/licenses/BSD-3-Clause";
-        break;
-      case "GPL":
-        licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html";
-        break;
-      case "Apache":
-        licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
-        break;
-      default:
-        licenseLink = "";
-        break;
-    }
-    
-    return licenseLink;
+        case "Apache":
+            licenseLink = "https://www.apache.org/licenses/LICENSE-2.0.html";
+            break;
 
+        case "BSD":
+            licenseLink = "https://opensource.org/licenses/BSD-3-Clause";
+            break;
+        case "GPL":
+            licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html";
+            break;
+        case "MIT":
+            licenseLink = "https://mit-license.org/";
+            break;
+        default:
+            licenseLink = "";
+            break;
+    }
+
+    return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (license === "N/A") return "";
-    else return `##Section\n\nThe license used is ${license}. Here is the link to get detailed information for this license: [${license}](${renderLicenseLink(license)})`;
+    else return `## Section\n\nThe license used is ${license}. Here is the link to get detailed information for this license: [${license}](${renderLicenseLink(license)})`;
 }
 
 // Create a function to generate markdown for README

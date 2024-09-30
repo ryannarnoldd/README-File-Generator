@@ -39,7 +39,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What license would you like to use?",
-        choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT", "Boost Software License 1.0", "The Unlicense", "N/A"]
+        choices: ['Apache', 'BSD', 'GPL', 'MIT', 'N/A']
     },
     {
         type: 'input',
@@ -55,7 +55,7 @@ const questions = [
 
 // Create a function to write README file using fs.
 function writeToFile(fileName, data) {
-    fs.writeFile(`${fileName}.md`, data, (err) =>
+    fs.writeFile(`./output/${fileName}.md`, data, (err) =>
         err ? console.log(err) : console.log(`Successfully created ${fileName}.md`)
       );
 }
