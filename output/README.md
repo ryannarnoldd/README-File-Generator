@@ -1,9 +1,9 @@
-# Reamme maker 
-![Github License](https://img.shields.io/badge/license-BSD-green)
+# TrackerCoaster: The Roller Coaster Tracker 
+![Github License](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
 
-THis is the descripton
+A simple command-line application that allows users to track their roller coaster rides. They are able to rate the scariness, theming, and enjoyment of each of the rides. It will be only saved to the user for their own reference.
 
 ## Table of Contents
 
@@ -16,23 +16,23 @@ THis is the descripton
 
 ## Installation
 
-You need to do this and that
+All you need to do to install the project is to go to the link of the project included, run the code by installing it within Node, and follow the prompts included in the console and it will display the ratings of the rides.
 
 ## Usage
 
-This is how to use it
+The project is used to track the user's roller coaster rides and rate them based on their experience.
 
 ## Contributing
 
-No one else.
+Ryan Arnold, Barry Jones, and Walt Disney
 
 ## Section
 
-The license used is BSD. Here is the link to get detailed information for this license: [BSD](https://opensource.org/licenses/BSD-3-Clause)
+The license used is MIT. Here is the link to get detailed information for this license: [MIT](https://mit-license.org/)
 
 ## Tests
 
-FJIWEIJ
+The tests are seen within the output folder where the user created and rated the rides available in Disney World only.
 
 ## Questions
 
