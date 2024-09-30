@@ -28,12 +28,28 @@ const questions = [
     {
         type: 'input',
         name: 'contribution',
-        message: 'Who contributed to this project? How can people contribute?'
+        message: 'Who contributed to this project?'
     },
     {
         type: 'input',
         name: 'tests',
         message: 'What tests are included in the project?'
+    },
+    {   
+        type: "list",
+        name: "license",
+        message: "What license would you like to use?",
+        choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "Mozilla Public License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense", "N/A"]
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub username?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?'
     }
 ];
 
