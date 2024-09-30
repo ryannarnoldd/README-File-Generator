@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application.
 import inquirer from 'inquirer';
 import fs from 'fs';
-// import { generateMarkdown } from './utils/generateMarkdown';
+import generateMarkdown from './utils/generateMarkdown.js';
 
-// TODO: Create an array of questions for user input
+// Creates an array of questions for user input.
 const questions = [
     {
         type: 'input',
@@ -37,28 +37,23 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file using fs.
 function writeToFile(fileName, data) {
     fs.writeFile(`${fileName}.md`, data, (err) =>
         err ? console.log(err) : console.log(`Successfully created ${fileName}.md`)
       );
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app.
 function init() {
-    // I need to use inquirer to ask the user the questions from questions[]
-    inquirer
-    .prompt(
-        questions
-    )
-    .then((answers) => {
-        
-        fs.writeFile('index.html', answers.title, (err) =>
-          err ? console.log(err) : console.log('Successfully created index.html!')
-        );
-    });
 
+    // Prompt the user with questions and calls the writeToFile function.
+    // It will pass through the answers to the generateMarkdown function from generateMarkdown.js.
+    inquirer.prompt(questions)
+    .then((answers) => {
+        writeToFile('README', generateMarkdown(answers));
+    });
 }
 
-// Function call to initialize app
+// Function call to initialize app.
 init();
