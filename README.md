@@ -3,7 +3,7 @@
 
 ## Description
 
-This is a README file generator that uses the command line to generate a README file for a project. The user is prompted with questions about their project and the answers are used to generate the README file that is outputted for the user to use. This project is a mixture of knowledge gained from the UCF Bootcamp class, Node.js, and the Inquirer package. 
+This is a README file generator that uses the command line to generate a README file for a project. The user is prompted with questions about their project and the answers are used to generate the README file that is outputted for the user to use. This project is a mixture of knowledge gained from the UCF Bootcamp class, Node.js, and the Inquirer package.  
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ Once 'node index.js' is run, the user will be prompted with questions about thei
 
 ## Contributing
 
-Ryan Arnold is the sole contributor to this project.
+Ryan Arnold is the sole contributor to this project .
 
 ## Section
 
